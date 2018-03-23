@@ -1,0 +1,140 @@
+.container {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+nav {
+  font-family: arial;
+  font-size: 18px;
+}
+
+.display-inline {
+  display: inline;
+}
+
+.space-content {
+  justify-content: space-between;
+}
+
+.vertical-end {
+  align-items: flex-end;
+}
+
+.horizontal-end {
+  justify-content: flex-end;
+}
+
+.vertical-start {
+  align-content: flex-start;
+}
+
+.horizontal.start {
+  justify-content: flex-start;
+}
+
+.vertical.right {
+  align-items: center;
+}
+
+.vertical-center {
+  align-items: center;
+}
+
+.horizontal-center {
+  justify-content: center;
+}
+
+.item {
+  padding: 4px;
+}
+
+.link-url {
+  color: #fff;
+  text-decoration: none;
+  padding: 4px;
+}
+
+.link-url:hover {
+  border: 2px solid #fff;
+  padding: 4px;
+}
+
+header {
+  background: #373b65;
+}
+
+header h1 {
+  color: #fff;
+  margin: 0;
+  font-size: 40px;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.formtodo p {
+  margin: 0;
+  display: inline;
+  font-size: 18px;
+  font-family: monospace;
+}
+
+.formtodo input {
+  float: right;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+}
+
+.formtodo div {
+  width: auto;
+  margin: 3px;
+  padding: 3px;
+  background: #d5d5d5;
+}
+
+.formtodo {
+  border: 1px solid black;
+  margin: 0px auto 0px auto;
+  width: 357px;
+  height: 400px;
+  background: #787878;
+}
+
+.formadd input {
+  font-size: 20px;
+  width: 300px;
+  height: 30px;
+  border: 1px solid black;
+  margin: 0px auto 0px auto;
+}
+
+.formadd button {
+  font-size: 20px;
+  background: black;
+  height: 40px;
+  border: 0;
+  color: white;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+footer {
+  color: #fff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #373b65;
+  text-align: center;
+  font-size: 30px
+}

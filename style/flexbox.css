@@ -1,0 +1,25 @@
+body{
+  border: 1px solid black;
+}
+
+.container{
+  /* width: 1000px; */
+  height: 500px;
+  display: flex;
+  border: 1px solid black;
+  justify-content: space-around;
+}
+
+.vertical-center{
+  justify-content: center;
+}
+
+.horizontal-center{
+  align-items: center;
+}
+
+.item{
+  padding: 4px;
+  border: 1px solid black;
+  justify-content: space-around;
+}
