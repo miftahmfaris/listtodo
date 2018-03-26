@@ -69,7 +69,7 @@ nav {
 }
 
 header {
-  background: #787878;
+  background: #4a117d;
 }
 
 header h1 {
@@ -159,6 +159,6 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  background: #787878;
+  background: #4a117d;
   font-size: 30px
 }
