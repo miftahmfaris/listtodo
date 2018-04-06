@@ -20,24 +20,28 @@ function hideSubmitEditButton(index) {
 
 function addUpdateTodo(index) {
   event.preventDefault();
-  if (edit_Todo.value === "") {
-    alert("Please input your task")
-  } else {
-    var edit = edit_Todo.value;
-    console.log(edit);
+  const editInput = document.getElementById("editTodo");
+  console.log(editInput.value);
+
+  if (editInput.value !== "") {
+    var edit = editInput.value;
     var objectEdit = JSON.parse(`{"fullName":"${edit}"}`);
-    arrayTodo.unshift(objectEdit)
+
+    editInput.value = "";
+    arrayTodo.unshift(objectEdit);
     localStorage.todoLocal = JSON.stringify(arrayTodo);
+
     hideSubmitAddButton();
-    input_Todo.value = "";
+    showTodo();
+  } else {
+    alert("Please input your task!!!");
   }
-  showTodo();
 }
 
 edit_Button.addEventListener("click", addUpdateTodo);
 edit_Todo.addEventListener("keyup", function(event) {
   event.preventDefault();
   if (event.keyCode === 13) {
-    edit_Button.click();
+    addUpdateTodo();
   }
 });

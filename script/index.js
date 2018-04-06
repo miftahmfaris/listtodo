@@ -3,7 +3,7 @@ let input_Todo = document.getElementById("inputTodo");
 let submit_Button = document.getElementById("submitButton");
 let edit_Todo = document.getElementById("editTodo");
 let edit_Button = document.getElementById("editButton");
-let search_Todo = document.getElementById("searchTodo")
+let search_Todo = document.getElementById("searchTodo");
 
 function template(arrayTodo, index) {
   return `
@@ -41,21 +41,26 @@ function checkTodo() {
 
 function addTodo() {
   event.preventDefault();
+
   let objectTodo = {};
+
   if (input_Todo.value == "") {
-    alert("Please Input Some Text");
+    alert("Please add some input");
   } else {
     objectTodo.fullName = input_Todo.value;
     arrayTodo.push(objectTodo);
   }
+
   input_Todo.value = "";
-  storeTodoToLocal(arrayTodo)
+  storeTodoToLocal(arrayTodo);
+
   return arrayTodo;
 }
 
 function storeTodoToLocal() {
   localStorage.todoLocal = JSON.stringify(arrayTodo);
-  showTodo()
+
+  showTodo();
 }
 
 submit_Button.addEventListener("click", addTodo);
@@ -66,4 +71,5 @@ submit_Button.addEventListener("click", addTodo);
 //     submit_Button.click();
 //   }
 // });
+
 showTodo();
