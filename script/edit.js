@@ -35,9 +35,9 @@ function addUpdateTodo(index) {
 }
 
 edit_Button.addEventListener("click", addUpdateTodo);
-// edit_Todo.addEventListener("keyup", function(event) {
-//   event.preventDefault();
-//   if (event.keyCode === 13) {
-//     edit_Button.click();
-//   }
-// });
+edit_Todo.addEventListener("keyup", function(event) {
+  event.preventDefault();
+  if (event.keyCode === 13) {
+    edit_Button.click();
+  }
+});
