@@ -7,6 +7,7 @@ function updateTodo(index) {
 function hideSubmitAddButton() {
   submit_Button.style.display = "inline";
   input_Todo.style.display = "inline";
+  search_Todo.style.display = "block"
   edit_Button.style.display = "none";
   edit_Todo.style.display = "none";
 }
@@ -14,6 +15,7 @@ function hideSubmitAddButton() {
 function hideSubmitEditButton(index) {
   submit_Button.style.display = "none";
   input_Todo.style.display = "none";
+  search_Todo.style.display = "none"
   edit_Button.style.display = "inline";
   edit_Todo.style.display = "inline";
 }
