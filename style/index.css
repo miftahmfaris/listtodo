@@ -3,8 +3,21 @@
   border: 1px solid black;
 }
 
+body{
+  margin: 0px;
+}
+
+.display-block{
+  display: block;
+}
+
 .column {
   flex-direction: column;
+}
+
+.icon-small{
+  width: 25px;
+  margin-top: -2px;
 }
 
 nav {
@@ -69,7 +82,7 @@ nav {
 }
 
 header {
-  background: #4a117d;
+  background: #787878;
 }
 
 header h1 {
@@ -119,9 +132,37 @@ header h1 {
   margin: 0;
 }
 
-.formadd input {
+.formadd #inputTodo {
   font-size: 20px;
-  width: 300px;
+  width: 273px;
+  height: 30px;
+  border: 2px solid black;
+  margin: 0px auto 0px auto;
+}
+
+.hide{
+  display: none;
+}
+
+.formadd #editTodo {
+  font-size: 20px;
+  width: 273px;
+  height: 30px;
+  border: 2px solid black;
+  margin: 0px auto 0px auto;
+}
+
+.formadd #searchTodo {
+  font-size: 20px;
+  width: 348px;
+  height: 30px;
+  border: 2px solid black;
+  margin: 0px auto 5px auto;
+}
+
+#searchTodo input {
+  font-size: 20px;
+  width: 273px;
   height: 30px;
   border: 1px solid black;
   margin: 0px auto 0px auto;
@@ -154,11 +195,7 @@ form button{
 }
 
 footer {
-  color: #fff;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background: #4a117d;
-  font-size: 30px
+  color: #000;
+  font-size: 30px;
+  text-align: center;
 }
