@@ -7,17 +7,15 @@ function searchingTodo() {
   // );
   // console.log(searched);
   for (var i = 0; i < arrayTodo.length; i++) {
-    if (arrayTodo[i].fullName.includes(search_Todo.value)) {
+    if (arrayTodo[i].fullName.toLowerCase().includes(search_Todo.value)) {
       arraySearch.push(arrayTodo[i]);
+      console.log(arrayTodo[i]);
     }
   }
-  console.log(arraySearch);
   displaySearch(arraySearch);
-  // return arraySearch;
 }
 
 function displaySearch(arraySearch) {
-  // console.log(arraySearch);
   listTodo.innerHTML = "";
 
   arraySearch.forEach((arraySearch, index) => {
