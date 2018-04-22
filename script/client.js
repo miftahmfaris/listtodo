@@ -1,7 +1,7 @@
 let submit_button = document.getElementById("submitButton");
 let input_Todo = document.getElementById("inputTodo");
 
-const API_URL = "http://localhost:3000";
+const API_URL = "http://localhost:3001/todo";
 
 function template(datas, index) {
   return `

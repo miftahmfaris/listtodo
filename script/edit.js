@@ -20,10 +20,9 @@ function hideSubmitEditButton(index) {
   edit_Todo.style.display = "inline";
 }
 
-function addUpdateTodo(index) {
+function addUpdateTodo() {
   event.preventDefault();
   const editInput = document.getElementById("editTodo");
-  console.log(editInput.value);
 
   if (editInput.value !== "") {
     var edit = editInput.value;
